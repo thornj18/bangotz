@@ -1,0 +1,18 @@
+<div width:100% height:100% >
+
+  <div ng-controller="AppCtrl" ng-cloak>
+    <div ng-controller="PostCtrl">
+      <md-grid-list md-cols="5" md-row-height="200px" md-gutter=3px>
+        <md-grid-tile ng-repeat="post in posts" style="background:#FFF">
+          <img src="{{post.images.thumbnail.url}}"/>
+          <md-grid-tile-footer>
+            <h3>{{post.caption.text}}</h3>
+          </md-grid-tile-footer>
+
+        </md-grid-tile>
+
+      </md-grid-list>
+
+    </div>
+  </div>
+</div>

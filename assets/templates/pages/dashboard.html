@@ -1,0 +1,50 @@
+<div ng-controller="AppCtrl" layout="column" style="min-height:100vh !important;" ng-cloak style="background:#FAFAFA">
+  <section layout="row" flex>
+
+    <md-content flex >
+      <div layout="column" layout-fill layout-align="top center">
+        <md-toolbar class="md-hue-2">
+
+
+          <div class="md-toolbar-tools">
+
+
+            <md-input-container flex layout-align="center">
+              <input type="text" placeholder="Search">
+            </md-input-container>
+
+            <md-menu-bar>
+              <md-menu>
+
+                <button class="md-button" aria-label="settings" ng-click="$mdOpenMenu()">
+                  <ng-md-icon  icon="account_circle"></ng-md-icon>
+                </button>
+                <md-menu-content width=3>
+                  <md-menu-item>
+
+                    <md-button style="text-align:right" ng-click=menu("account")>Account</md-button>
+                  </md-menu-item>
+                  <md-menu-item>
+
+                    <md-button style="text-align:right" ng-click='' >Logout</md-button>
+                  </md-menu-item>
+
+
+                </md-menu-content>
+              </md-menu>
+            </md-menu-bar>
+
+          </div>
+        </md-toolbar>
+
+
+
+      </div>
+      <div style="background-color:#FAFAFA" flex ui-view layout-padding
+      min-height:100%>
+      jhfjshjfhj
+    </div>
+    </md-content>
+
+  </section>
+  </div
